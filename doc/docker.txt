@@ -1,0 +1,67 @@
+*docker.txt*
+*docker_help*
+===================================================================================
+CONTENTS                                                     *docker.nvim*
+
+
+docker.nvim is a plugin for execute docker commands in Vim.
+
+    1. Commands..........................................|docker_commands|
+
+To find out more:
+https://github.com/azratul/docker.nvim
+
+===================================================================================
+COMMANDS                                                     *docker_commands*
+
+
+:DockerBuild [dockerfile] [name:tag]                                   *DockerBuild*
+    Builds docker images from a Dockerfile.
+    E.g. :DockerBuild Dockerfile.dev azratul/my-docker-image:latest
+
+:DockerRunD [args...]                                                  *DockerRunD*
+    Creates a writeable container layer over the specified image in daemon mode
+    E.g. :DockerRunD -p 8080:8080 --rm azratul/my-docker-image:latest
+
+:DockerRun [args...]                                                   *DockerRunD*
+    Creates a writeable container layer over the specified image in interactive mode
+    E.g. :DockerRun -p 8080:8080 --rm azratul/my-docker-image:latest ash
+
+:DockerExec [args...]                                                  *DockerExec*
+    Runs a new command in interactive mode in a running container
+    E.g. :DockerExec my-container ash
+
+:DockerLogs [container]                                                *DockerLogs*
+    Retrieves logs present at the time of execution
+    E.g. :DockerLogs my-container
+
+:DockerPush [image]                                                    *DockerPush*
+    Push an image or a repository to a registry
+    E.g. :DockerPush azratul/my-docker-image
+
+:DockerPull [image]                                                    *DockerPull*
+    Pull an image or a repository from a registry
+    E.g. :DockerPull azratul/my-docker-image
+
+:DockerPs                                                              *DockerPs*
+    List containers
+    E.g. :DockerPs
+
+:DockerImages                                                          *DockerImages*
+    List images
+    E.g. :DockerImages
+
+:DockerComposeLogs                                                     *DockerComposeLogs*
+    Retrieves compose logs present at the time of execution
+    E.g. :DockerComposeLogs
+
+:DockerComposeUp [args...]                                             *DockerComposeUp*
+    Create and start containers
+    E.g. :DockerComposeUp -f docker-compose.dev.yaml -d
+
+:DockerComposeDown                                                     *DockerComposeDown*
+    Stop and remove containers, networks
+    E.g. :DockerComposeDown
+
+===================================================================================
+vim:ft=help:et:ts=2:sw=2:sts=2:norl

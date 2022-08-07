@@ -1,0 +1,39 @@
+*terraform.txt*
+*terraform_help*
+===================================================================================
+CONTENTS                                                     *terraform.nvim*
+
+
+terraform.nvim is a plugin for execute Terraform commands in Vim.
+
+    1. Commands..........................................terraform_commands|
+
+To find out more:
+https://github.com/azratul/terraform.nvim
+
+===================================================================================
+COMMANDS                                                     *terraform_commands*
+
+
+:TerraformInit [main_filepath]                                       *TerraformInit*
+    Init terraform plan.
+    E.g. :TerraformInit ..
+
+:TerraformValidate [main_filepath] [extra_args]                  *TerraformValidate*
+    Validate terraform files.
+    E.g. :TerraformValidate .. /var-file=dev.tfvars
+
+:TerraformPlan [main_filepath] [extra_args]                          *TerraformPlan*
+    Execution plan for terraform files.
+    E.g. :TerraformPlan .. /var-file=dev.tfvars
+
+:TerraformApply [main_filepath] [extra_args]                        *TerraformApply*
+    Apply terraform plan.
+    E.g. :TerraformApply .. /var-file=dev.tfvars
+
+:TerraformDestroy [main_filepath] [extra_args]                    *TerraformDestroy*
+    Destroy everything in terraform plan.
+    E.g. :TerraformDestroy .. /var-file=dev.tfvars
+
+===================================================================================
+vim:ft=help:et:ts=2:sw=2:sts=2:norl
