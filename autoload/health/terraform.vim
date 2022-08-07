@@ -1,4 +1,4 @@
-function! health#terraform()
+function! health#terraform#check()
     if !has('nvim-0.5')
         call health#report_warn("please install nvim > 0.5")
     else
