@@ -24,3 +24,6 @@ HelmInstall	helm.txt	/*HelmInstall*
 HelmTemplate	helm.txt	/*HelmTemplate*
 HelmHistory	helm.txt	/*HelmHistory*
 HelmHelp	helm.txt	/*helm_help*
+KubectlGet	kubectl.txt	/*KubectlGet*
+KubectlLogs	kubectl.txt	/*KubectlLogs*
+KubectlHelp	kubectl.txt	/*kubectl_help*

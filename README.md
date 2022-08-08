@@ -1,4 +1,4 @@
-# Neovim Plugin for execute Docker, Helm & Terraform commands inside vim
+# Neovim Plugin for execute Docker, Helm, Kubectl & Terraform commands inside vim
 
 
 ## How to use
@@ -29,10 +29,9 @@ Access the documentation inside vim:
 ```
 
 
-## Todo:
+```
+:h KubectlHelp
+```
 
 
-- [x] Docker
-- [x] Terraform
-- [x] Helm
-- [ ] Kubectl
+Kubectl: WIP. Some commands were added, but it's unfinished

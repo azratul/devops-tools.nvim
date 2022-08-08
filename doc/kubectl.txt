@@ -1,0 +1,27 @@
+*kubectl.txt*
+*kubectl_help*
+===================================================================================
+CONTENTS                                                     *kubectl.nvim*
+
+
+kubectl.nvim is a plugin for execute Kubectl commands in Vim.
+
+    1. Commands..........................................kubectl_commands|
+
+To find out more:
+https://github.com/azratul/devops-tools.nvim
+
+===================================================================================
+COMMANDS                                                 *kubectl_commands*
+
+
+:KubectlGet [project]                                       *KubectlGet*
+    Get a new kubectl project charts.
+    E.g. :KubectlGet my_project
+
+:KubectlLogs [project]                                       *KubectlLogs*
+    Logs a kubectl release.
+    E.g. :KubectlLogs my_project
+
+===================================================================================
+vim:ft=help:et:ts=2:sw=2:sts=2:norl
