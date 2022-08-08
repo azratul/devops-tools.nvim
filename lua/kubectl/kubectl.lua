@@ -3,10 +3,10 @@ local M = {}
 local cmd = vim.cmd
 local fn = vim.fn
 
-function M.create(object)
+function M.get(object)
     if object ~= nil then
         pcall(cmd, 'split running-app')
-        pcall(cmd, 'resize 5')
+        pcall(cmd, 'resize 6')
         fn.termopen('sh -c "kubectl get ' .. object .. '"')
         pcall(cmd, 'normal G')
     else
