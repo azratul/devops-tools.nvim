@@ -9,7 +9,7 @@ docker.nvim is a plugin for execute docker commands in Vim.
     1. Commands..........................................|docker_commands|
 
 To find out more:
-https://github.com/azratul/docker.nvim
+https://github.com/azratul/devops-tools.nvim
 
 ===================================================================================
 COMMANDS                                                     *docker_commands*

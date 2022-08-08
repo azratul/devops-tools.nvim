@@ -17,3 +17,10 @@ DockerComposeUp	docker.txt	/*DockerComposeUp*
 DockerComposeDown	docker.txt	/*DockerComposeDown*
 DockerComposeLogs	docker.txt	/*DockerComposeLogs*
 DockerHelp	docker.txt	/*docker_help*
+HelmCreate	helm.txt	/*HelmCreate*
+HelmUninstall	helm.txt	/*HelmUninstall*
+HelmUpgrade	helm.txt	/*HelmUpgrade*
+HelmInstall	helm.txt	/*HelmInstall*
+HelmTemplate	helm.txt	/*HelmTemplate*
+HelmHistory	helm.txt	/*HelmHistory*
+HelmHelp	helm.txt	/*helm_help*

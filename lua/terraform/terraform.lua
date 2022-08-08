@@ -6,7 +6,7 @@ local fn = vim.fn
 function M.init(filepath)
     if filepath ~= nil then
         pcall(cmd, 'split running-app')
-        pcall(cmd, 'resize 10')
+        pcall(cmd, 'resize 6')
         fn.termopen('sh -c "terraform -chdir=' .. filepath .. ' init"')
         pcall(cmd, 'normal G')
     else

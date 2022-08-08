@@ -4,7 +4,7 @@ let s:save_cpo = &cpo " save user coptions
 set cpo&vim           " reset them to defaults
 
 " command to run our plugin
-command! -nargs=1 TerraformInit lua require("terraform").init(<args>)
+command! -complete=file -nargs=1 TerraformInit lua require("terraform").init(<q-args>)
 command! -complete=file -nargs=+ TerraformValidate lua require("terraform").validate(<f-args>)
 command! -complete=file -nargs=+ TerraformPlan lua require("terraform").plan(<f-args>)
 command! -complete=file -nargs=+ TerraformApply lua require("terraform").apply(<f-args>)

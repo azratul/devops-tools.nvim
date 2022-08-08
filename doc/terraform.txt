@@ -9,7 +9,7 @@ terraform.nvim is a plugin for execute Terraform commands in Vim.
     1. Commands..........................................terraform_commands|
 
 To find out more:
-https://github.com/azratul/terraform.nvim
+https://github.com/azratul/devops-tools.nvim
 
 ===================================================================================
 COMMANDS                                                     *terraform_commands*
