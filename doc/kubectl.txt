@@ -15,13 +15,17 @@ https://github.com/azratul/devops-tools.nvim
 COMMANDS                                                 *kubectl_commands*
 
 
-:KubectlGet [project]                                       *KubectlGet*
-    Get a new kubectl project charts.
-    E.g. :KubectlGet my_project
+:KubectlGet [object]                                           *KubectlGet*
+    Get yaml from any k8s object.
+    E.g. :KubectlGet deploy
 
-:KubectlLogs [project]                                       *KubectlLogs*
-    Logs a kubectl release.
-    E.g. :KubectlLogs my_project
+:KubectlLogs                                                  *KubectlLogs*
+    Get logs from any pod.
+    E.g. :KubectlLogs
+
+:KubectlDecode                                              *KubectlDecode*
+    Decode any k8s secret.
+    E.g. :KubectlDecode
 
 ===================================================================================
 vim:ft=help:et:ts=2:sw=2:sts=2:norl
