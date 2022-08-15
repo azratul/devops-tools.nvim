@@ -19,6 +19,10 @@ COMMANDS                                                 *kubectl_commands*
     Get yaml from any k8s object.
     E.g. :KubectlGet deploy
 
+:KubectlDescribe [object]                                 *KubectlDescribe*
+    Describe any k8s object.
+    E.g. :KubectlDescribe pod
+
 :KubectlLogs                                                  *KubectlLogs*
     Get logs from any pod.
     E.g. :KubectlLogs

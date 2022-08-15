@@ -5,6 +5,7 @@ set cpo&vim           " reset them to defaults
 
 " command to run our plugin
 command! -nargs=+ KubectlGet lua require("kubectl").get(<q-args>)
+command! -nargs=+ KubectlDescribe lua require("kubectl").describe(<q-args>)
 command! -nargs=0 KubectlLogs lua require("kubectl").logs()
 command! -nargs=0 KubectlDecode lua require("kubectl").decode()
 

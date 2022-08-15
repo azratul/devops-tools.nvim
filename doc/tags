@@ -27,4 +27,5 @@ HelmHelp	helm.txt	/*helm_help*
 KubectlGet	kubectl.txt	/*KubectlGet*
 KubectlLogs	kubectl.txt	/*KubectlLogs*
 KubectlDecode	kubectl.txt	/*KubectlDecode*
+KubectlDescribe	kubectl.txt	/*KubectlDescribe*
 KubectlHelp	kubectl.txt	/*kubectl_help*

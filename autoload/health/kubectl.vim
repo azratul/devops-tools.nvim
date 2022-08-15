@@ -5,6 +5,12 @@ function! health#kubectl#check()
         call health#report_ok("nvim 0.5 installed")
     endif
 
+    if !executable('fzf')
+        call health#report_error("please install Fuzzy Finder(fzf)")
+    else
+        call health#report_ok("Fuzzy Finder installed")
+    endif
+
     if !executable('kubectl')
         call health#report_error("please install kubectl")
     else

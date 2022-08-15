@@ -81,4 +81,21 @@ function M.decode()
     cmd("normal i")
 end
 
+function M.describe(object)
+    window()
+    local file = vim.fn.tempname()
+    local stdout = ""
+    fn.termopen('kubectl get ' .. object .. ' | fzf | cut -d" " -f1> ' .. file, {
+        on_exit = function()
+            api.nvim_command('bdelete!')
+            local f = io.open(file, 'r')
+            stdout = f:read('*all')
+            f:close()
+            os.remove(file)
+            vim.api.nvim_command('!kubectl describe ' .. object .. ' ' .. stdout)
+        end
+    })
+    cmd("normal i")
+end
+
 return M
